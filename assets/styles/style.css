@@ -1,0 +1,45 @@
+body {
+    display: flex;
+    height: 100vh;
+    background-color: #ffe8f2;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.animation-size {
+    display: flex;
+    position: relative;
+    height: 800px;
+    width: 600px;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.box-front {
+    display: inline-block;
+    position: absolute;
+    top: 61%;
+    left: 17%;
+    z-index: 1;
+}
+
+.file {
+    display: inline-block;
+    position: absolute;
+    top: 0%;
+    left: 25%;
+}
+
+.box-back {
+    display: inline-block;
+    position: absolute;
+    top: 50.28%;
+    left: 11%;
+}
