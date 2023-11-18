@@ -1,7 +1,9 @@
 body {
     display: flex;
     height: 100vh;
-    background-color: #ffe8f2;
+    /* background-color: #ffe8f2; */
+    background-color: black;
+
 }
 
 .container {
@@ -21,21 +23,83 @@ body {
     align-items: flex-end;
 }
 
-.box-front {
+.front-box {
     display: inline-block;
     position: absolute;
-    top: 61%;
-    left: 17%;
-    z-index: 3;
+    top: 59%;
+    left: 24%;
+    z-index: 5;
 }
 
+/* Front Head Animation Styles */
+.front-head {
+    display: inline-block;
+    position: absolute;
+    top: 58.95%;
+    left: 43%;
+    opacity: 1;
+    animation: front-head1 0.5s forwards 1.5s;
+    z-index: 6;
+}
+
+.front-head-p2 {
+    display: inline-block;
+    position: absolute;
+    top: 58.95%;
+    left: 43%;
+    opacity: 0;
+    animation: front-head2 0.5s forwards 1.5s;
+    z-index: 6;
+}
+
+.front-head-p3 {
+    display: inline-block;
+    position: absolute;
+    top: 55.3%;
+    left: 42.5%;
+    opacity: 0;
+    animation: front-head3 0.5s forwards 1.5s;
+    z-index: 6;
+}
+
+.front-head-p4 {
+    display: inline-block;
+    position: absolute;
+    top: 56.5%;
+    left: 33.5%;
+    opacity: 0;
+    animation: front-head4 1s forwards 1.5s;
+    z-index: 6;
+}
+
+@keyframes front-head1 {
+    0% { opacity: 1; }
+    20% { opacity: 0;}
+    100% { opacity: 0;}
+}
+
+@keyframes front-head2 {
+    25% { opacity: 1;}
+    45% { opacity: 0;}
+}
+
+@keyframes front-head3 {
+    50% { opacity: 1;}
+    75% { opacity: 0;}
+}
+
+@keyframes front-head4 {
+    100% { opacity: 1;}
+}
+
+/* File Animation Styles */
 .file {
     display: inline-block;
     position: absolute;
     top: 0%;
-    left: 25%;
+    left: 30%;
     animation: fileDrop 1s forwards;
-    z-index: 2;
+    z-index: 4;
 }
 
 @keyframes fileDrop {
@@ -43,9 +107,99 @@ body {
     100% {top: 63%;}
 }
 
-.box-back-img {
+.back-box {
     display: inline-block;
     position: absolute;
-    top: 50.28%;
-    left: 11%;
+    top: 54%;
+    left: 24%;
+    z-index: 3;
+}
+
+/* Back Head Styles */
+.back-head {
+    display: inline-block;
+    position: absolute;
+    top: 48.5%;
+    left: 18.4%;
+    animation: back-head1 0.5s forwards 1.5s;
+    z-index: 2;
+}
+
+.back-head2 {
+    display: inline-block;
+    position: absolute;
+    top: 49%;
+    left: 23.75%;
+    opacity: 0;
+    animation: back-head2 0.5s forwards 1.5s;
+    z-index: 5;
+}
+
+.back-head3 {
+    display: inline-block;
+    position: absolute;
+    top: 52.7%;
+    left: 23.9%;
+    opacity: 0;
+    animation: back-head3 0.5s forwards 1.5s;
+    z-index: 5;
+}
+
+.back-head4 {
+    display: inline-block;
+    position: absolute;
+    top: 54%;
+    left: 143.7px;
+    opacity: 0;
+    animation: back-head4 1s forwards 1.5s;
+    z-index: 5;
+}
+
+@keyframes back-head1 {
+    0% { opacity: 1; }
+    20% { opacity: 0;}
+    100% { opacity: 0;}
+}
+
+@keyframes back-head2 {
+    25% { opacity: 1;}
+    45% { opacity: 0;}
+}
+
+@keyframes back-head3 {
+    50% { opacity: 1;}
+    75% { opacity: 0;}
+}
+
+@keyframes back-head4 {
+    100% { opacity: 1;}
+}
+
+.sticky-tape-p1 {
+    display: inline-block;
+    position: absolute;
+    top: 62.16%;
+    left: 32%;
+    opacity: 0;
+    z-index: 7;
+    animation: sticky-tape-p1 1s forwards 2.5s;
+}
+
+.sticky-tape-p2 {
+    display: inline-block;
+    position: absolute;
+    top: 56.2%;
+    left: 32%;
+    opacity: 0;
+    z-index: 7;
+    animation: sticky-tape-p2 1s forwards 2.5s;
+}
+
+@keyframes sticky-tape-p1{
+    50% {opacity: 1;}
+    100% {opacity: 1;}
+}
+
+@keyframes sticky-tape-p2{
+    100% {opacity: 1;}
 }
